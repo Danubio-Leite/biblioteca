@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livros</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Livro</h1>
+    </header>
+    <main>
+        <form class="formulario">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" class="input-padrao" required placeholder="Título do Livro">
+
+            <label for="autor">Autor</label>
+            <input id="autor" class="input-padrao" required placeholder="Nome do Autor">
+
+            <div class="editoraform">
+                <label for="observacoes">Editora</label>
+                <input id="editora" class="input-padrao" required placeholder="Nome da Editora">
+    
+                <label for="ano">Ano de Publicação</label>
+                <input type="number" id="ano" class="input-padrao" required placeholder="XXXX">
+            </div>
+
+            <fieldset class="formulario">
+                <legend>Formato</legend>
+
+                <label for="radio-fisico"><input type="radio" name="formato" value="fisico" id="radio-fisico" checked> Físico</label>
+
+                <label for="radio-digital"><input type="radio" name="formato" value="digital" id="radio-digital"> Digital</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Prateleira de Armazenamento</legend>
+                <select>
+                    <option>Livro Digital</option>
+                    <option>Prateleira 1A</option>
+                    <option>Prateleira 1B</option>
+                    <option>Prateleira 1C</option>
+                    <option>Prateleira 2A</option>
+                    <option>Prateleira 2B</option>
+                    <option>Prateleira 2C</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Salvar Livro" class="enviar">
+        </form>
+        <a class="copyright" href="index.html">Voltar</a>
+
+        <ul class="ListaDeLivros">
+        </ul>
+        <script src="script.js"></script>
+    </main>
+    <footer>
+        <img img class="icons" src="image/logo_pb.png">
+        <p class="copyright">&copy; Copyright Danúbio Leite - 2023</p>
+    </footer>
+</body>
+</html>

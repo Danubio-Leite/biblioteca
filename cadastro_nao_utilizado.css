@@ -1,0 +1,48 @@
+header {
+    color: aliceblue;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-size: 2em;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 400px;
+    background: linear-gradient(#4777cb, #172947);
+  }
+
+main{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    max-width: 90%;
+}
+
+.formulario {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.editoraform {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 25%;
+    align-items: center;
+}
+
+.icons {
+    height: 100px;
+}
+
+footer {
+    position: fixed;
+	text-align: center;
+	padding: 40px 0;
+}
